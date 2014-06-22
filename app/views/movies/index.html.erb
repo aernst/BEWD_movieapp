@@ -1,8 +1,7 @@
 <h1>RetFlix</h1>
 <h3>Welcome to RetFlix! See you collections of movies below</h3>
-</br>
 
-<h3><%= link_to "Add new movie", new_movie_path %></h3>
+<h5><%= link_to "Add new movie", new_movie_path %></h5>
 
 <%= form_tag "/", method: "Get" do %>
 	<%= text_field_tag :q %>
@@ -11,6 +10,7 @@
 
 </br>
 </br>
+
 
 <%= render "list" %> 
 <!--
