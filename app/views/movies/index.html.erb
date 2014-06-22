@@ -1,0 +1,30 @@
+<h1>RetFlix</h1>
+<h3>Welcome to RetFlix! See you collections of movies below</h3>
+</br>
+
+<h3><%= link_to "Add new movie", new_movie_path %></h3>
+
+<%= form_tag "/", method: "Get" do %>
+	<%= text_field_tag :q %>
+	<%= submit_tag "Search" %>
+<% end %>
+
+</br>
+</br>
+
+<%= render "list" %> 
+<!--
+<h3>Movies released in 1994 (find)</h3>
+<b><%= @movietwo.title %> </b> (<%= @movietwo.year_released %>) - <%= @movietwo.description %></br>
+
+<h3>Movies released in 1994 (where)</h3>
+<% @moviethree.each do |x| %>
+<b><%= x.title %> </b> (<%=x.year_released %>) - <%= x.description %></br>
+<% end %>
+
+
+<h3>Movies with "God" in the title</h3>
+<% @moviefour.each do |x| %>
+<b><%= x.title %> </b> (<%=x.year_released %>) - <%= x.description %></br>
+<% end %>
+-->
