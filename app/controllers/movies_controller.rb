@@ -37,11 +37,10 @@ class MoviesController < ApplicationController
   end   
 
   def destroy
+    @movie = Movie.find(params[:id])
     @movie.destroy
-    #respond_to do |format|
-     # format.html { redirect_to movies_url }
-      #format.json { head :no_content }
-    end
+    redirect_to movies_path :notice => "Success!"  
+  end
 
   private
     def movie_params

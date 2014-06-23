@@ -18,5 +18,6 @@
 
 	</fieldset>
 	<%= f.submit %>	
-	<%= link_to 'Back', movies_path %>
+	<%= link_to 'Homepage', movies_path %></br>
+	<%= link_to "Destroy", @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>

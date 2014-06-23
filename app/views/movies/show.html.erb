@@ -3,6 +3,6 @@
 <p><%= @movie.year_released %></p>
 
 <%= link_to "Edit", edit_movie_path(@movie) %>
-<%= link_to "Destroy", method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to "Destroy", @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
 </br>
 <%= link_to 'Back to Homepage', movies_path %>
