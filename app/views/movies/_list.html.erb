@@ -1,3 +1,3 @@
 <% @movie.each do |x| %>
-<b><%= link_to x.title, "movies/#{x.id}" %> </b> (<%=x.year_released %>) - <%= x.description %> <%= link_to "Edit", edit_movie_path(x.id) %> <%= link_to "Delete", x, method: :delete, data: { confirm: 'Are you sure?' } %></br>
+<b><%= link_to x.title, "movies/#{x.id}" %> </b> (<%=x.year_released %>) | <i>rating: <%=x.rating %> </i> |  - <%= x.description %> <%= link_to "Edit", edit_movie_path(x.id) %> <%= link_to "Delete", x, method: :delete, data: { confirm: 'Are you sure?' } %></br>
 <% end %>

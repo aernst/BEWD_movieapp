@@ -33,10 +33,16 @@
 			<%= f.text_field :year_released %>	
 		</div>
 
+		<div class='fields'>
+			<%= f.label :rating, "Rating: (1-5)" %>
+			<%= f.text_field :rating %>	
+		</div>
 
 	</fieldset>
 	<%= f.submit %>	
 
-	<%= link_to "Destroy", @movie, method: :delete, data: { confirm: 'Are you sure?' } %></br>
+	<!--<%= link_to "Destroy", @movie, method: :delete, data: { confirm: 'Are you sure?' } %></br> -->
 	<%= link_to 'Back to Homepage', movies_path %>
 <% end %>
+
+
